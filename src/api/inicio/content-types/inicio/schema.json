@@ -1,0 +1,55 @@
+{
+  "kind": "singleType",
+  "collectionName": "inicio_page",
+  "info": {
+    "singularName": "inicio",
+    "pluralName": "inicio-page",
+    "displayName": "Inicio",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "app_name": {
+      "type": "text",
+      "maxLength": 255
+    },
+    "app_subtitle": {
+      "type": "text",
+      "maxLength": 255
+    },
+    "noticias": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::noticia.noticia"
+    },
+    "caracteristicas": {
+      "type": "component",
+      "repeatable": true,
+      "component": "caracteristicas.icon-label"
+    },
+    "app_logo": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "header": {
+      "type": "component",
+      "repeatable": false,
+      "component": "meta-pages.header"
+    },
+    "organizaciones": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::organizacion.organizacion"
+    }
+  }
+}

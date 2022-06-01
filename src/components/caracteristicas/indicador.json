@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_caracteristicas_indicadors",
+  "info": {
+    "displayName": "Indicador",
+    "icon": "list-ol",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "titulo": {
+      "type": "text",
+      "maxLength": 255
+    },
+    "subtitulo": {
+      "type": "text",
+      "maxLength": 255
+    },
+    "valor": {
+      "type": "integer"
+    }
+  }
+}

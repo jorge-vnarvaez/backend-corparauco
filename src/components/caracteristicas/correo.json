@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_caracteristicas_correos",
+  "info": {
+    "displayName": "Correo",
+    "icon": "mail-bulk"
+  },
+  "options": {},
+  "attributes": {
+    "email": {
+      "type": "text",
+      "maxLength": 255
+    }
+  }
+}

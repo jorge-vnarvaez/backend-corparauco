@@ -1,0 +1,35 @@
+{
+  "kind": "singleType",
+  "collectionName": "footer_section",
+  "info": {
+    "singularName": "footer",
+    "pluralName": "footer-section",
+    "displayName": "Footer"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "correos": {
+      "type": "component",
+      "repeatable": true,
+      "component": "caracteristicas.correo"
+    },
+    "telefonos": {
+      "type": "component",
+      "repeatable": true,
+      "component": "caracteristicas.telefonos"
+    },
+    "direcciones": {
+      "type": "component",
+      "repeatable": true,
+      "component": "caracteristicas.direccion"
+    },
+    "rrss": {
+      "type": "component",
+      "repeatable": true,
+      "component": "caracteristicas.icon-label"
+    }
+  }
+}

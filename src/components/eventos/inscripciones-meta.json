@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_eventos_inscripciones_metas",
+  "info": {
+    "displayName": "InscripcionesMeta",
+    "icon": "pencil-alt",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "fecha_inicio": {
+      "type": "datetime"
+    },
+    "fecha_limite": {
+      "type": "datetime"
+    },
+    "sumario": {
+      "type": "richtext"
+    }
+  }
+}

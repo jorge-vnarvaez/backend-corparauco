@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_meta_pages_pagina_servicios",
+  "info": {
+    "displayName": "Pagina-Servicios",
+    "icon": "server"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "text",
+      "maxLength": 255
+    },
+    "header": {
+      "type": "component",
+      "repeatable": false,
+      "component": "meta-pages.header"
+    },
+    "body": {
+      "type": "component",
+      "repeatable": false,
+      "component": "meta-pages.body"
+    },
+    "path": {
+      "type": "string"
+    },
+    "programas": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::programa.programa"
+    }
+  }
+}

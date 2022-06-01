@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_eventos_contenidos",
+  "info": {
+    "displayName": "Contenidos",
+    "icon": "calendar-alt",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "dia": {
+      "type": "date"
+    },
+    "hora_inicio": {
+      "type": "time"
+    },
+    "hora_termino": {
+      "type": "time"
+    },
+    "titulo": {
+      "type": "text",
+      "maxLength": 255
+    },
+    "descripcion": {
+      "type": "richtext"
+    }
+  }
+}

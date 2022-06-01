@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_meta_pages_headers",
+  "info": {
+    "displayName": "Header",
+    "icon": "ad",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "titulo": {
+      "type": "text",
+      "maxLength": 255
+    },
+    "imagen": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  }
+}

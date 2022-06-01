@@ -1,0 +1,33 @@
+{
+  "collectionName": "components_evaluaciones_respuestas",
+  "info": {
+    "displayName": "Respuesta",
+    "icon": "align-justify",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "usuario": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user"
+    },
+    "evaluacion": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::evaluacion.evaluacion"
+    },
+    "respuesta": {
+      "type": "text"
+    },
+    "es_correcta": {
+      "type": "boolean"
+    },
+    "intento": {
+      "type": "integer"
+    },
+    "puntaje": {
+      "type": "integer"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_meta_pages_bodies",
+  "info": {
+    "displayName": "Body",
+    "icon": "bars",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "imagen": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "texto": {
+      "type": "richtext"
+    }
+  }
+}

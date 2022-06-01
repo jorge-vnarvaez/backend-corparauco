@@ -1,0 +1,20 @@
+{
+  "kind": "singleType",
+  "collectionName": "servicios_page",
+  "info": {
+    "singularName": "servicios",
+    "pluralName": "servicios-page",
+    "displayName": "Servicios"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "paginas": {
+      "type": "component",
+      "repeatable": true,
+      "component": "meta-pages.pagina-servicios"
+    }
+  }
+}

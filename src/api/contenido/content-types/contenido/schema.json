@@ -1,0 +1,69 @@
+{
+  "kind": "collectionType",
+  "collectionName": "contenidos",
+  "info": {
+    "singularName": "contenido",
+    "pluralName": "contenidos",
+    "displayName": "Contenido",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "titulo": {
+      "type": "text",
+      "maxLength": 255
+    },
+    "slug": {
+      "type": "text",
+      "maxLength": 255
+    },
+    "descripcion": {
+      "type": "string",
+      "maxLength": 255
+    },
+    "sumario": {
+      "type": "text",
+      "maxLength": 255
+    },
+    "es_publico": {
+      "type": "boolean"
+    },
+    "imagen_referencia": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "archivo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "contenidos.archivos"
+    },
+    "organizadores": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::organizador.organizador",
+      "mappedBy": "contenidos"
+    },
+    "cursos": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::curso.curso",
+      "mappedBy": "contenidos"
+    },
+    "formato": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::formato.formato",
+      "inversedBy": "contenidos"
+    }
+  }
+}

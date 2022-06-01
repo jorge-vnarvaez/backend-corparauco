@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_caracteristicas_icon_labels",
+  "info": {
+    "displayName": "Icon-Label",
+    "icon": "icons"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "text",
+      "maxLength": 255
+    },
+    "icon": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "url_to": {
+      "type": "text",
+      "maxLength": 255
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "collectionName": "components_eventos_inscripciones",
+  "info": {
+    "displayName": "Inscripciones",
+    "icon": "address-book",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "nombre": {
+      "type": "text",
+      "maxLength": 255
+    },
+    "apellidos": {
+      "type": "text",
+      "maxLength": 255
+    },
+    "email": {
+      "type": "email"
+    },
+    "telefono": {
+      "type": "text"
+    },
+    "rut": {
+      "type": "text"
+    },
+    "region": {
+      "type": "text"
+    },
+    "provincia": {
+      "type": "text"
+    },
+    "comuna": {
+      "type": "string"
+    }
+  }
+}

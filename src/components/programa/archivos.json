@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_programa_archivos",
+  "info": {
+    "displayName": "Archivos",
+    "icon": "archive",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "titulo": {
+      "type": "text",
+      "maxLength": 255
+    },
+    "url": {
+      "type": "text",
+      "maxLength": 255
+    }
+  }
+}

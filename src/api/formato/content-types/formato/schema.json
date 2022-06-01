@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "formatos",
+  "info": {
+    "singularName": "formato",
+    "pluralName": "formatos",
+    "displayName": "Formato",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nombre": {
+      "type": "text",
+      "maxLength": 255
+    },
+    "contenidos": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::contenido.contenido",
+      "mappedBy": "formato"
+    },
+    "icono": {
+      "type": "string"
+    }
+  }
+}

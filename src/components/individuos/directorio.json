@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_individuos_directorios",
+  "info": {
+    "displayName": "Directorio",
+    "icon": "user-tie"
+  },
+  "options": {},
+  "attributes": {
+    "nombre": {
+      "type": "text"
+    },
+    "cargo": {
+      "type": "text"
+    },
+    "foto_perfil": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

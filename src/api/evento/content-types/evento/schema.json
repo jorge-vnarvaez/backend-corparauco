@@ -1,0 +1,124 @@
+{
+  "kind": "collectionType",
+  "collectionName": "eventos",
+  "info": {
+    "singularName": "evento",
+    "pluralName": "eventos",
+    "displayName": "Evento",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "titulo": {
+      "type": "text",
+      "maxLength": 255
+    },
+    "slug": {
+      "type": "text",
+      "maxLength": 255
+    },
+    "imagen_referencia": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "imagen_cover": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "fecha_inicio": {
+      "type": "datetime"
+    },
+    "fecha_termino": {
+      "type": "datetime"
+    },
+    "ubicacion": {
+      "type": "text",
+      "maxLength": 255
+    },
+    "es_publico": {
+      "type": "boolean"
+    },
+    "url_video_llamada": {
+      "type": "text",
+      "maxLength": 255
+    },
+    "url_pago": {
+      "type": "text",
+      "maxLength": 255
+    },
+    "inscripciones": {
+      "type": "component",
+      "repeatable": true,
+      "component": "eventos.inscripciones"
+    },
+    "sumario": {
+      "type": "text"
+    },
+    "descripcion": {
+      "type": "richtext"
+    },
+    "secciones": {
+      "type": "component",
+      "repeatable": true,
+      "component": "meta-pages.paragraph"
+    },
+    "transmision_vivo": {
+      "type": "boolean"
+    },
+    "pase_movilidad": {
+      "type": "boolean"
+    },
+    "requiere_inscripcion": {
+      "type": "boolean"
+    },
+    "contenidos": {
+      "type": "component",
+      "repeatable": true,
+      "component": "eventos.contenidos"
+    },
+    "inscripciones_meta": {
+      "type": "component",
+      "repeatable": false,
+      "component": "eventos.inscripciones-meta"
+    },
+    "inscripcion_via_meet": {
+      "type": "boolean"
+    },
+    "programas": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::programa.programa",
+      "mappedBy": "eventos"
+    },
+    "colaboradores": {
+      "type": "component",
+      "repeatable": true,
+      "component": "eventos.colaborador"
+    },
+    "url_formulario": {
+      "type": "text"
+    },
+    "galeria": {
+      "type": "component",
+      "repeatable": true,
+      "component": "meta-pages.galeria"
+    }
+  }
+}

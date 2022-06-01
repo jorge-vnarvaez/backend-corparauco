@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_evaluaciones_alternativas",
+  "info": {
+    "displayName": "Alternativas",
+    "icon": "file-alt",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "alternativa": {
+      "type": "text"
+    },
+    "es_correcta": {
+      "type": "boolean"
+    },
+    "evaluacion": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::evaluacion.evaluacion"
+    }
+  }
+}

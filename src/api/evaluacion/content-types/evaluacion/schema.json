@@ -1,0 +1,42 @@
+{
+  "kind": "collectionType",
+  "collectionName": "evaluaciones",
+  "info": {
+    "singularName": "evaluacion",
+    "pluralName": "evaluaciones",
+    "displayName": "Evaluacion",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "titulo": {
+      "type": "text",
+      "maxLength": 255
+    },
+    "descripcion": {
+      "type": "text",
+      "maxLength": 255
+    },
+    "formato": {
+      "type": "text",
+      "maxLength": 255
+    },
+    "es_ponderada": {
+      "type": "boolean"
+    },
+    "puntos": {
+      "type": "integer"
+    },
+    "intentos": {
+      "type": "integer"
+    },
+    "alternativas": {
+      "type": "component",
+      "repeatable": true,
+      "component": "evaluaciones.alternativas"
+    }
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "kind": "collectionType",
+  "collectionName": "cursos",
+  "info": {
+    "singularName": "curso",
+    "pluralName": "cursos",
+    "displayName": "Curso",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "titulo": {
+      "type": "text",
+      "maxLength": 255
+    },
+    "slug": {
+      "type": "string",
+      "maxLength": 255
+    },
+    "sumario": {
+      "type": "text",
+      "maxLength": 255
+    },
+    "descripcion": {
+      "type": "text"
+    },
+    "users": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "plugin::users-permissions.user",
+      "mappedBy": "cursos"
+    },
+    "contenidos": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::contenido.contenido",
+      "inversedBy": "cursos"
+    },
+    "organizadores": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::organizador.organizador",
+      "mappedBy": "cursos"
+    },
+    "programas": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::programa.programa",
+      "mappedBy": "cursos"
+    },
+    "imagen_referencia": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

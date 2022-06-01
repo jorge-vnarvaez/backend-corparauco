@@ -1,0 +1,21 @@
+{
+  "kind": "singleType",
+  "collectionName": "redes_sociales",
+  "info": {
+    "singularName": "red-social",
+    "pluralName": "redes-sociales",
+    "displayName": "Red Social",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "redes_sociales": {
+      "type": "component",
+      "repeatable": true,
+      "component": "caracteristicas.red-social"
+    }
+  }
+}

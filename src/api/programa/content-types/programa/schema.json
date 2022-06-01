@@ -1,0 +1,109 @@
+{
+  "kind": "collectionType",
+  "collectionName": "programas",
+  "info": {
+    "singularName": "programa",
+    "pluralName": "programas",
+    "displayName": "Programa",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "titulo": {
+      "type": "text",
+      "maxLength": 255
+    },
+    "slug": {
+      "type": "text",
+      "maxLength": 255
+    },
+    "sumario": {
+      "type": "text"
+    },
+    "imagen_referencia": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "logo": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "galeria": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "cursos": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::curso.curso",
+      "inversedBy": "programas"
+    },
+    "empresas": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::empresa.empresa",
+      "inversedBy": "programas"
+    },
+    "eventos": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::evento.evento",
+      "inversedBy": "programas"
+    },
+    "organizadores": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::organizador.organizador",
+      "mappedBy": "programas"
+    },
+    "archivos": {
+      "type": "component",
+      "repeatable": true,
+      "component": "programa.archivos"
+    },
+    "descripcion": {
+      "type": "richtext"
+    },
+    "sections": {
+      "type": "component",
+      "repeatable": true,
+      "component": "meta-pages.paragraph"
+    },
+    "usuarios": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "plugin::users-permissions.user",
+      "mappedBy": "programas"
+    },
+    "organizaciones": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::organizacion.organizacion",
+      "inversedBy": "programas"
+    }
+  }
+}

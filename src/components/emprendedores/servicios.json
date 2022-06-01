@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_emprendedores_servicios",
+  "info": {
+    "displayName": "Servicios",
+    "icon": "coffee",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "nombre": {
+      "type": "text"
+    },
+    "galeria": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  }
+}

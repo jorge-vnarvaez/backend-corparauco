@@ -1,0 +1,35 @@
+{
+  "collectionName": "components_contenidos_archivos",
+  "info": {
+    "displayName": "Archivos",
+    "icon": "box",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "titulo": {
+      "type": "text",
+      "maxLength": 255
+    },
+    "archivo": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "es_video": {
+      "type": "boolean"
+    },
+    "url_youtube": {
+      "type": "text"
+    },
+    "es_imagen": {
+      "type": "boolean"
+    }
+  }
+}

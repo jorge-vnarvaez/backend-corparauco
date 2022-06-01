@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "respuestas",
+  "info": {
+    "singularName": "respuesta",
+    "pluralName": "respuestas",
+    "displayName": "Respuesta",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "evaluaciones_respuesta": {
+      "type": "component",
+      "repeatable": false,
+      "component": "evaluaciones.respuesta"
+    }
+  }
+}

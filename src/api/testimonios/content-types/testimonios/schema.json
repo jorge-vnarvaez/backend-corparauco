@@ -1,0 +1,42 @@
+{
+  "kind": "singleType",
+  "collectionName": "testimonios_page",
+  "info": {
+    "singularName": "testimonios",
+    "pluralName": "testimonios-page",
+    "displayName": "Testimonios",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "testimonios": {
+      "type": "component",
+      "repeatable": true,
+      "component": "contenidos.testimonios"
+    },
+    "label": {
+      "type": "text"
+    },
+    "path": {
+      "type": "string"
+    },
+    "header": {
+      "type": "component",
+      "repeatable": false,
+      "component": "meta-pages.header"
+    },
+    "body": {
+      "type": "component",
+      "repeatable": false,
+      "component": "meta-pages.body"
+    },
+    "indicadores": {
+      "type": "component",
+      "repeatable": true,
+      "component": "caracteristicas.indicador"
+    }
+  }
+}

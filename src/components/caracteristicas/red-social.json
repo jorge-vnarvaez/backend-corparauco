@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_caracteristicas_red_socials",
+  "info": {
+    "displayName": "Red Social",
+    "icon": "tablet-alt"
+  },
+  "options": {},
+  "attributes": {
+    "logo": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "url": {
+      "type": "text"
+    }
+  }
+}

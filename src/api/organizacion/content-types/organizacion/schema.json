@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "organizacions",
+  "info": {
+    "singularName": "organizacion",
+    "pluralName": "organizacions",
+    "displayName": "Organizacion",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nombre": {
+      "type": "text"
+    },
+    "logo": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "url_web": {
+      "type": "text"
+    },
+    "programas": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::programa.programa",
+      "inversedBy": "organizaciones"
+    }
+  }
+}

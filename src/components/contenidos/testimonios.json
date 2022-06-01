@@ -1,0 +1,34 @@
+{
+  "collectionName": "components_contenidos_testimonios",
+  "info": {
+    "displayName": "Testimonios",
+    "icon": "scroll",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "imagen": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "testimonio": {
+      "type": "text"
+    },
+    "autor": {
+      "type": "text"
+    },
+    "comuna": {
+      "type": "string"
+    },
+    "region": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "mensajes",
+  "info": {
+    "singularName": "mensaje",
+    "pluralName": "mensajes",
+    "displayName": "Mensaje",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "tema": {
+      "type": "text",
+      "maxLength": 255
+    },
+    "email": {
+      "type": "email",
+      "maxLength": 50
+    },
+    "cuerpo": {
+      "type": "text"
+    }
+  }
+}

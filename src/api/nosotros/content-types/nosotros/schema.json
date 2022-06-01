@@ -1,0 +1,21 @@
+{
+  "kind": "singleType",
+  "collectionName": "nosotros_pages",
+  "info": {
+    "singularName": "nosotros",
+    "pluralName": "nosotros-pages",
+    "displayName": "Nosotros",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "paginas": {
+      "type": "component",
+      "repeatable": true,
+      "component": "meta-pages.paginas"
+    }
+  }
+}

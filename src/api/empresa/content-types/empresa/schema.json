@@ -1,0 +1,120 @@
+{
+  "kind": "collectionType",
+  "collectionName": "empresas",
+  "info": {
+    "singularName": "empresa",
+    "pluralName": "empresas",
+    "displayName": "Empresa",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nombre": {
+      "type": "text",
+      "maxLength": 255
+    },
+    "slug": {
+      "type": "text",
+      "maxLength": 255
+    },
+    "descripcion": {
+      "type": "text"
+    },
+    "logo": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "galeria": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "imagen_referencia": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "rubro": {
+      "type": "text",
+      "maxLength": 255
+    },
+    "giro": {
+      "type": "text",
+      "maxLength": 255
+    },
+    "es_formal": {
+      "type": "boolean"
+    },
+    "organizadores": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::organizador.organizador",
+      "mappedBy": "empresas"
+    },
+    "usuarios": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "empresas"
+    },
+    "programas": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::programa.programa",
+      "mappedBy": "empresas"
+    },
+    "servicios": {
+      "type": "component",
+      "repeatable": true,
+      "component": "emprendedores.servicios"
+    },
+    "correo": {
+      "type": "text"
+    },
+    "telefono": {
+      "type": "text"
+    },
+    "pagina_web": {
+      "type": "text"
+    },
+    "facebook": {
+      "type": "text"
+    },
+    "linkedin": {
+      "type": "text"
+    },
+    "instagram": {
+      "type": "text"
+    },
+    "youtube": {
+      "type": "text"
+    },
+    "emprendedores": {
+      "type": "component",
+      "repeatable": true,
+      "component": "emprendedores.emprendedor"
+    }
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "kind": "collectionType",
+  "collectionName": "organizadores",
+  "info": {
+    "singularName": "organizador",
+    "pluralName": "organizadores",
+    "displayName": "Organizador",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "titulo": {
+      "type": "text",
+      "maxLength": 255
+    },
+    "slug": {
+      "type": "text",
+      "maxLength": 255
+    },
+    "descripcion": {
+      "type": "text"
+    },
+    "sumario": {
+      "type": "text",
+      "maxLength": 255
+    },
+    "padres": {
+      "type": "integer"
+    },
+    "cursos": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::curso.curso",
+      "inversedBy": "organizadores"
+    },
+    "programas": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::programa.programa",
+      "inversedBy": "organizadores"
+    },
+    "contenidos": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::contenido.contenido",
+      "inversedBy": "organizadores"
+    },
+    "noticias": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::noticia.noticia",
+      "mappedBy": "organizadores"
+    },
+    "empresas": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::empresa.empresa",
+      "inversedBy": "organizadores"
+    }
+  }
+}

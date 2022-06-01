@@ -1,0 +1,26 @@
+{
+  "kind": "singleType",
+  "collectionName": "directorio_page",
+  "info": {
+    "singularName": "directorio",
+    "pluralName": "directorio-page",
+    "displayName": "Directorio",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "pagina": {
+      "type": "component",
+      "repeatable": false,
+      "component": "meta-pages.paginas"
+    },
+    "miembros": {
+      "type": "component",
+      "repeatable": true,
+      "component": "individuos.directorio"
+    }
+  }
+}

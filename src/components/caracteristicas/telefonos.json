@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_caracteristicas_telefonos",
+  "info": {
+    "displayName": "Telefonos",
+    "icon": "phone",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "numero": {
+      "type": "text",
+      "maxLength": 20
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_meta_pages_galerias",
+  "info": {
+    "displayName": "Galeria",
+    "icon": "images",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "imagenes": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "titulo": {
+      "type": "text"
+    }
+  }
+}

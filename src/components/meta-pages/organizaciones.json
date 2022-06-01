@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_meta_pages_organizaciones",
+  "info": {
+    "displayName": "Organizaciones",
+    "icon": "user",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "organizaciones": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::organizacion.organizacion"
+    }
+  }
+}

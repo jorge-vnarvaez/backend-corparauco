@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "logs",
+  "info": {
+    "singularName": "log",
+    "pluralName": "logs",
+    "displayName": "Log"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "log_key": {
+      "type": "text",
+      "maxLength": 255
+    },
+    "log_value": {
+      "type": "text"
+    }
+  }
+}

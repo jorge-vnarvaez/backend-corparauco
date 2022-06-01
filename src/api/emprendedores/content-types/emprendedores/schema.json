@@ -1,0 +1,29 @@
+{
+  "kind": "singleType",
+  "collectionName": "emprendedores_page",
+  "info": {
+    "singularName": "emprendedores",
+    "pluralName": "emprendedores-page",
+    "displayName": "Emprendedores",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "label": {
+      "type": "text"
+    },
+    "header": {
+      "type": "component",
+      "repeatable": false,
+      "component": "meta-pages.header"
+    },
+    "organizaciones": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::organizacion.organizacion"
+    }
+  }
+}

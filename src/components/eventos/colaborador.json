@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_eventos_colaboradors",
+  "info": {
+    "displayName": "Colaborador",
+    "icon": "diagnoses"
+  },
+  "options": {},
+  "attributes": {
+    "logo": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

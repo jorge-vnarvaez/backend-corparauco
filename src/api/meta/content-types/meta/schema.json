@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "metas",
+  "info": {
+    "singularName": "meta",
+    "pluralName": "metas",
+    "displayName": "Meta"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "meta_key": {
+      "type": "text",
+      "maxLength": 255
+    },
+    "meta_value": {
+      "type": "text"
+    }
+  }
+}

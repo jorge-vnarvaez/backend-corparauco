@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_meta_pages_paragraphs",
+  "info": {
+    "displayName": "Section",
+    "icon": "align-center",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "titulo": {
+      "type": "text",
+      "maxLength": 255
+    },
+    "texto": {
+      "type": "richtext"
+    },
+    "imagen": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  }
+}
