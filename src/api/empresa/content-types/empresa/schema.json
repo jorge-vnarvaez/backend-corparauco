@@ -73,12 +73,6 @@
       "target": "api::organizador.organizador",
       "mappedBy": "empresas"
     },
-    "usuarios": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "plugin::users-permissions.user",
-      "inversedBy": "empresas"
-    },
     "programas": {
       "type": "relation",
       "relation": "manyToMany",
@@ -115,6 +109,12 @@
       "type": "component",
       "repeatable": true,
       "component": "emprendedores.emprendedor"
+    },
+    "usuarios": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "empresas"
     }
   }
 }

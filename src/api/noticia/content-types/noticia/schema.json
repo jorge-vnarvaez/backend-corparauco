@@ -18,7 +18,8 @@
     },
     "slug": {
       "type": "text",
-      "maxLength": 255
+      "maxLength": 255,
+      "required": true
     },
     "sumario": {
       "type": "text"

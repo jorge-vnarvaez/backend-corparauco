@@ -112,12 +112,6 @@
       "target": "api::curso.curso",
       "inversedBy": "users"
     },
-    "empresas": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::empresa.empresa",
-      "mappedBy": "usuarios"
-    },
     "programas": {
       "type": "relation",
       "relation": "manyToMany",
@@ -126,6 +120,12 @@
     },
     "pais": {
       "type": "text"
+    },
+    "empresas": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::empresa.empresa",
+      "inversedBy": "usuarios"
     }
   }
 }
